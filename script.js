@@ -2,7 +2,6 @@ const menuItem = document.querySelectorAll('.menu-item');
 let slide;
 const containerMain = document.querySelector('.container-main');
 
-
 const foods = [
   {
     nome: 'hamburguer',
@@ -27,7 +26,7 @@ const foods = [
 
 ]
 
-function showCar() {
+function showFood() {
   clearInterval(slide)
 
   const foodId = this.classList[1];
@@ -50,12 +49,9 @@ function showCar() {
   
 }
 
-
 menuItem.forEach(item => {
-  item.addEventListener('click', showCar)
+  item.addEventListener('click', showFood)
 })
-
-
 
 function slideFood() {
   let index = 0;
@@ -80,7 +76,7 @@ function slideFood() {
     
     index += 1;
    
-  }, 1500);
+  }, 1800);
 }
 
 slideFood(); 
