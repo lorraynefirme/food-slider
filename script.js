@@ -76,7 +76,7 @@ function slideFood() {
     
     index += 1;
    
-  }, 1800);
+  }, 2800);
 }
 
 slideFood(); 
